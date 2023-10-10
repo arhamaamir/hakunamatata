@@ -5,7 +5,7 @@ pipeline {
 			stages {
 				stage('Source'){
 					steps{
-						checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '825fc4d4-4161-4170-9587-28a936f82af6', url: 'http://172.30.11.178/abhishek1/aspdotnetjenkins']]])
+						checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '80386438-c1b2-44d6-94b8-009ad49ff8b6', url: 'https://github.com/arhamaamir/hakunamatata']]])
 					}
 				}
 				stage('Build') {
